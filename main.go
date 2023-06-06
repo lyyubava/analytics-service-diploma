@@ -11,10 +11,9 @@ import (
 
 func bootstrapRouter() *gin.Engine {
 	r := gin.Default()
-	router := r.Group("/analytics")
-	router.GET("/likes", controllers.GetLikesAnalytics)
-	router.GET("/comments", controllers.GetCommentsAnalytics)
-	router.GET("/health", controllers.Health)
+	r.GET("/likes", controllers.GetLikesAnalytics)
+	r.GET("/comments", controllers.GetCommentsAnalytics)
+	r.GET("/health", controllers.Health)
 	return r
 }
 
