@@ -1,5 +1,5 @@
 variables:
-- group: social-network-var-group
+- group: analytics-var-group
 - name: dockerfilePath
   value: Dockerfile
 
